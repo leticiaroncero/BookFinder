@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <title>Book Finder - Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Your Book</h2>
+            <div class="form-group">
+                <label for="input-book">Title</label>
+                <input type="text" class="form-control" id="input-book">
+                <small id="input-book" class="form-text text-muted">Type in a book you like</small>
+            </div>
+            <div class="form-group">
+                <label for="input-cover">Link to Photo Image</label>
+                <input type="url" class="form-control" id="input-cover">
+            </div>
+            <div class="form-group">
+                <label for="input-select">The plot moves quickly -- every chapter leaves on a cliffhanger, making it
+                    impossible to put the book down</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">The story has multiple plot lines</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">The book is based on a true story or inspired by real-life events</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">I can relate to the main character in the book</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">The story is set in the past and borrows characteristics of the time period in
+                    which it is set</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">The book is thought-provoking and debate-generating in its controversial
+                    implications</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">This book can be enjoyed by children and adults alike</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">This is a popular, top-selling book</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">This book made me laugh</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-select">There's a villain of some kind in this story</label>
+                <select class="selectpicker" id="input-select" title="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+</body>
+
+</html>
