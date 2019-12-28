@@ -149,15 +149,17 @@
             event.preventDefault();
 
             var scoreValues = [];
-            //for
-            //end for
+            $(".selectpicker").each(function() {
+                var selectValue = parseInt($(this).val().trim());
+                scoreValues.push(selectValue);
+            });
 
             var newBook = {
-                title: $("#input-book").trim().val(),
-                photo: $("#input-cover").trim().val(),
+                title: $("#input-book").val().trim(),
+                photo: $("#input-cover").val().trim(),
                 scores: scoreValues,
             }
-
+            
         });
     </script>
 </body>
