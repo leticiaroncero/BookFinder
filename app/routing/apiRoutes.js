@@ -1,13 +1,13 @@
 var express = require("express");
-var books = require("../data/friends");
+var books = require("../data/books");
 
 var router = express.Router();
 
-router.get("/api/friends", function (req, res) {
+router.get("/api/books", function (req, res) {
     res.json(books);
 });
 
-router.post("/api/friends", function (req, res) {
+router.post("/api/books", function (req, res) {
     books.push(req.body);
     res.send();
 });

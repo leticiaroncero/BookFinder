@@ -1,5 +1,5 @@
 {
-  "name": "FriendFinder",
+  "name": "BookFinder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leticiaroncero/FriendFinder.git"
+    "url": "git+https://github.com/leticiaroncero/BookFinder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leticiaroncero/FriendFinder/issues"
+    "url": "https://github.com/leticiaroncero/BookFinder/issues"
   },
-  "homepage": "https://github.com/leticiaroncero/FriendFinder#readme",
+  "homepage": "https://github.com/leticiaroncero/BookFinder#readme",
   "dependencies": {
     "express": "^4.17.1"
   }

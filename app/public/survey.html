@@ -157,7 +157,7 @@
                 scores: scoreValues,
             }
 
-            $.post("/api/friends", newBook)
+            $.post("/api/books", newBook)
             .then(function (data) {
                 console.log("Response from the server:");
                 console.log(data);
