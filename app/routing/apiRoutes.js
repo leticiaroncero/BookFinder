@@ -9,7 +9,7 @@ router.get("/api/books", function (req, res) {
 
 router.post("/api/books", function (req, res) {
     books.push(req.body);
-    res.send();
+    res.json(books[0]);
 });
 
 module.exports = router;

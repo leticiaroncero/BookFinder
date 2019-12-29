@@ -132,6 +132,27 @@
         </form>
     </div>
 
+    <div class="modal fade bd-example-modal-lg" id="matching-book-modal" tabindex="-1" role="dialog"
+        aria-labelledby="matching-book-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalTitle">Best Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="book-title"></h3>
+                    <img id="book-cover">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -157,11 +178,16 @@
                 scores: scoreValues,
             }
 
+            $("#book-survey")[0].reset();
+
             $.post("/api/books", newBook)
-            .then(function (data) {
-                console.log("Response from the server:");
-                console.log(data);
-            });
+                .then(function (data) {
+                    console.log("Response from the server:");
+                    console.log(data);
+                    $("#book-title").text(data.title);
+                    $("#book-cover").attr('src', data.photo);
+                    $('#matching-book-modal').modal('show');
+                });
         });
     </script>
 </body>
