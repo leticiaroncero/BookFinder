@@ -35,6 +35,9 @@ label {
 .jumbotron>.inner {
     position: relative;
     z-index: 2;
+<<<<<<< HEAD
     font-size: large;
     font-weight: 300;
+=======
+>>>>>>> 755db572894939f61134413cba2469c48b053287
 }
