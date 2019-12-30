@@ -109,7 +109,40 @@ var books = [
             4,
             3,
         ]
-    }
+    },
+    {
+        "title": "Persepolis",
+        "photo": "https://images-na.ssl-images-amazon.com/images/I/81iniAfNnxL.jpg",
+        "scores": [
+            3,
+            3,
+            5,
+            3,
+            5,
+            5,
+            1,
+            3,
+            4,
+            3,
+        ]
+    },
+    {
+        "title": "The Shining",
+        "photo": "https://prodimage.images-bn.com/pimages/9780525565321_p0_v2_s550x406.jpg",
+        "scores": [
+            4,
+            2,
+            3,
+            1,
+            3,
+            1,
+            1,
+            4,
+            1,
+            5,
+        ]
+    },
+
 ];
 
 module.exports = books;
